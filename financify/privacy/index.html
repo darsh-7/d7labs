@@ -86,9 +86,11 @@
   <p>
     The app asks for camera access for one purpose: scanning a receipt so the amount and
     date can be read automatically. The text recognition runs <strong>entirely on your
-    device</strong>, using a model bundled inside the app (Google ML Kit text recognition).
+    device</strong>, using a model bundled inside the app (Google ML Kit text recognition),
+    and the recognised text is then interpreted by a parser that also runs on your device.
     Receipt images and the text extracted from them are not uploaded anywhere, and are not
-    sent to us or to Google for processing.
+    sent to us or to Google for processing. See section 7 for the one thing ML Kit does
+    send about itself.
   </p>
   <p>
     You can refuse or revoke the camera permission at any time in Android settings; the
@@ -114,13 +116,27 @@
     your fingerprint or any other biometric data.
   </p>
 
-  <h2>7. Network access</h2>
+  <h2>7. Network access, and what does use it</h2>
   <p>
     The app’s manifest includes the <code>INTERNET</code> and
-    <code>ACCESS_NETWORK_STATE</code> permissions. These are contributed by third-party
-    libraries bundled with the app; <strong>the app itself does not send your financial
-    data over the network</strong>, and does not contain any server API that would receive
-    it. We operate no backend for Financify.
+    <code>ACCESS_NETWORK_STATE</code> permissions. We want to be precise about why, because
+    “this app can reach the internet” deserves an explanation in a money tracker.
+  </p>
+  <p>
+    <strong>We operate no server, and none of your financial records are sent anywhere.</strong>
+    Financify contains no code that uploads your transactions, goals or settings — there is
+    no account, no sync and no backend of ours for them to go to.
+  </p>
+  <p>
+    The permissions arrive with Google’s ML Kit, the on-device text-recognition component
+    used for receipt scanning. ML Kit bundles a Google logging library
+    (<code>transport-backend-cct</code>) that may send Google its own diagnostic and usage
+    information about the library — for example that text recognition ran, and whether it
+    succeeded. That data is Google’s, is governed by
+    <a href="https://developers.google.com/ml-kit/terms" rel="noopener">Google’s ML Kit terms</a>
+    and the <a href="https://policies.google.com/privacy" rel="noopener">Google privacy
+    policy</a>, and it does not include your receipt images, the text read from them, or any
+    transaction you record.
   </p>
 
   <h2>8. What we do not do</h2>
