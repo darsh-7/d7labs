@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Financify | D7 Labs</title>
-<meta name="description" content="Privacy policy for Financify (com.d7labs.financify). Your transactions and saving goals are stored only on your device.">
+<meta name="description" content="Privacy policy for Financify (com.d7labs.financify). Your financial data is stored only on your device.">
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="../../style.css">
 </head>
@@ -15,7 +15,8 @@
     <a class="logo" href="../../">D7<span>Labs</span></a>
     <nav>
       <a href="../../">Home</a>
-      <a href="mailto:d7labs77@gmail.com">Contact</a>
+      <a href="../">Financify</a>
+      <a href="../terms/">Terms</a>
     </nav>
   </div>
 </header>
@@ -24,165 +25,185 @@
 
   <h1>Privacy Policy for Financify</h1>
   <p class="dateline">
-    Effective date: 19 September 2026 &nbsp;·&nbsp; Last updated: 19 September 2026<br>
+    Effective date: 25 September 2026 &nbsp;·&nbsp; Last updated: 25 September 2026<br>
     Applies to the Android application <code>com.d7labs.financify</code>
   </p>
 
   <div class="summary">
-    <p><strong>In short: your financial records stay on your phone.</strong></p>
+    <p><strong>Your financial data stays on your phone.</strong></p>
     <p>
-      Financify has no accounts, no adverts and no servers of ours. Your transactions and
-      saving goals are saved in a private database on your device and are never sent to us.
-      The only time information leaves your device is when you choose to scan a receipt: the
-      text read from that receipt is sent to Google’s Gemini service so it can fill in the
-      transaction form for you.
+      Financify records your income, expenses and savings goals in a private database on
+      your own device. We do not operate any server that receives it, we have no user
+      accounts, and the app contains no advertising, analytics or tracking. Receipt
+      scanning runs entirely on your device.
     </p>
   </div>
 
   <h2>1. Who we are</h2>
   <p>
-    Financify (“the app”) is developed and published by <strong>D7 Labs</strong> (“we”, “us”,
-    “our”). You can contact us about anything in this policy at
-    <a href="mailto:d7labs77@gmail.com">d7labs77@gmail.com</a>.
+    Financify (“the app”) is developed and published by <strong>D7 Labs</strong> (“we”,
+    “us”). For the purposes of the EU and UK General Data Protection Regulation, D7 Labs
+    would be the data controller — although, as set out below, we do not receive or
+    process any of your personal data.
+  </p>
+  <p>Contact: <a href="mailto:d7labs77@gmail.com">d7labs77@gmail.com</a>.</p>
+
+  <h2>2. Scope</h2>
+  <p>
+    This policy covers the Financify Android application distributed on Google Play under
+    the application ID <code>com.d7labs.financify</code>. It does not cover Google Play
+    itself, which collects information under
+    <a href="https://policies.google.com/privacy" rel="noopener">Google’s privacy policy</a>
+    whenever you install or update any app.
   </p>
 
-  <h2>2. Scope of this policy</h2>
+  <h2>3. The financial information you enter</h2>
   <p>
-    This policy covers the Financify Android application distributed on Google Play under the
-    application ID <code>com.d7labs.financify</code>. It does not cover Google Play itself,
-    which is governed by
-    <a href="https://policies.google.com/privacy" rel="noopener">Google’s own privacy policy</a>.
-  </p>
-
-  <h2>3. Information stored only on your device</h2>
-  <p>
-    Everything you enter into Financify is written to a private storage area on your device
-    that only this app can read. We never receive it and have no technical means of accessing it.
+    Because Financify is a money tracker, the information you put into it is sensitive. We
+    have designed it so that information never reaches us. Everything below is written to a
+    private database on your device that only this app can read:
   </p>
   <table>
-    <thead>
-      <tr><th>What is stored</th><th>Why</th></tr>
-    </thead>
+    <thead><tr><th>What is stored</th><th>Why</th></tr></thead>
     <tbody>
-      <tr>
-        <td>Income and expense transactions (title, amount, type, date, description, category)</td>
-        <td>To show your balance, history and spending insights</td>
-      </tr>
-      <tr>
-        <td>Saving goals (name, target and saved amounts, target date, note, colour, icon)</td>
-        <td>To track your progress toward each goal</td>
-      </tr>
-      <tr>
-        <td>App preferences, such as whether the biometric lock is switched on</td>
-        <td>To respect your choices between sessions</td>
-      </tr>
+      <tr><td>Transactions — title, amount, income or expense, date and any note you add</td>
+          <td>To show your balance, history and totals</td></tr>
+      <tr><td>Your income and expense categories</td><td>To group and filter transactions</td></tr>
+      <tr><td>Savings goals — name, target, amount saved, target date and note</td>
+          <td>To show goal progress</td></tr>
+      <tr><td>Settings — theme, language, currency and whether app lock is on</td>
+          <td>To keep the app the way you set it</td></tr>
+      <tr><td>A reference to a receipt image, if you scan one</td>
+          <td>To attach the receipt to its transaction</td></tr>
     </tbody>
   </table>
+  <p>
+    We never receive this information and have no technical means of accessing it. There is
+    no account to sign in to and no cloud sync.
+  </p>
 
-  <h2>4. Permissions the app uses</h2>
+  <h2>4. Camera and receipt scanning</h2>
+  <p>
+    The app asks for camera access for one purpose: scanning a receipt so the amount and
+    date can be read automatically. The text recognition runs <strong>entirely on your
+    device</strong>, using a model bundled inside the app (Google ML Kit text recognition).
+    Receipt images and the text extracted from them are not uploaded anywhere, and are not
+    sent to us or to Google for processing.
+  </p>
+  <p>
+    You can refuse or revoke the camera permission at any time in Android settings; the
+    rest of the app continues to work, and you can enter transactions by typing or by voice
+    instead.
+  </p>
+
+  <h2>5. Microphone and voice entry</h2>
+  <p>
+    If you use “Say a transaction”, the app uses Android’s own speech recognition to turn
+    what you say into text. That is a operating-system service provided by your device and
+    is governed by your device manufacturer’s and Google’s privacy terms; depending on your
+    device settings it may process audio on the device or on Google’s servers. We never
+    receive the audio or the transcript — the app only reads the resulting text locally to
+    fill in the transaction form.
+  </p>
+
+  <h2>6. Biometric unlock</h2>
+  <p>
+    If you turn on App lock, Android asks for your fingerprint, face or screen lock before
+    opening the app. This is handled entirely by the Android BiometricPrompt system. The
+    app is only told whether authentication succeeded; it never sees, receives or stores
+    your fingerprint or any other biometric data.
+  </p>
+
+  <h2>7. Network access</h2>
+  <p>
+    The app’s manifest includes the <code>INTERNET</code> and
+    <code>ACCESS_NETWORK_STATE</code> permissions. These are contributed by third-party
+    libraries bundled with the app; <strong>the app itself does not send your financial
+    data over the network</strong>, and does not contain any server API that would receive
+    it. We operate no backend for Financify.
+  </p>
+
+  <h2>8. What we do not do</h2>
   <ul>
-    <li>
-      <strong>Camera</strong> — only when you open the receipt scanner. Camera images are
-      processed on your device to read the text on the receipt; the images themselves are not
-      uploaded.
-    </li>
-    <li>
-      <strong>Biometrics</strong> — if you enable the app lock, Android’s own fingerprint or
-      face unlock is used. Your biometric data is handled entirely by Android; the app only
-      receives a “success” or “failure” result and never sees or stores it.
-    </li>
-  </ul>
-
-  <h2>5. Receipt scanning and third-party processing</h2>
-  <p>
-    When you scan a receipt, two steps happen:
-  </p>
-  <ol>
-    <li>
-      <strong>On-device text recognition.</strong> Google ML Kit reads the text from the camera
-      image on your device.
-    </li>
-    <li>
-      <strong>Receipt analysis.</strong> The recognised text is sent over an encrypted
-      connection to Google’s Gemini API, which returns the merchant, amount, date and a short
-      description to pre-fill the transaction form. This happens only when you use the
-      scanner, and you can review or change the result before saving. Google processes this
-      text under the
-      <a href="https://ai.google.dev/gemini-api/terms" rel="noopener">Gemini API Terms</a> and
-      <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.
-    </li>
-  </ol>
-  <p>
-    If you never use the receipt scanner, no transaction information leaves your device.
-  </p>
-  <p>
-    Google ML Kit may also send limited, non-personal diagnostic and performance information
-    (such as device model, app version and API usage metrics) to Google to maintain and
-    improve the library, as described in
-    <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener">Google’s ML Kit data disclosure</a>.
-  </p>
-
-  <h2>6. What we do not do</h2>
-  <ul>
-    <li>We do not operate any server that receives your data</li>
-    <li>No advertising and no advertising networks</li>
-    <li>No Android Advertising ID</li>
+    <li>No advertising, and no advertising network or advertising identifier</li>
+    <li>No analytics, crash reporting, attribution or telemetry services</li>
     <li>No user accounts, registration or sign-in</li>
-    <li>No connection to your bank or any financial institution</li>
-    <li>No payments, lending, or money transfers</li>
-    <li>We never sell or share your personal information</li>
+    <li>No selling, renting or sharing of any information — we have none to share</li>
+    <li>No access to your contacts, location, photos, files, SMS or call logs</li>
+    <li>No cookies or comparable tracking technology</li>
   </ul>
 
-  <h2>7. Device backup</h2>
+  <h2>9. Device backup</h2>
   <p>
-    If you have Android’s backup feature switched on, the app’s data may be included in
-    <em>your own</em> Google account backup, like other apps on your phone. That backup belongs
-    to you and is governed by Google’s privacy policy. We have no access to it.
+    If Android’s backup feature is switched on, app data may be included in <em>your own</em>
+    Google account backup, as it is for other apps. That backup belongs to you and is
+    governed by Google’s privacy policy. We have no access to it. You can turn backup off
+    for this app in your device settings.
   </p>
 
-  <h2>8. Children’s privacy</h2>
+  <h2>10. Children</h2>
   <p>
-    Financify is intended for adults and is not directed at children under 13. We do not
-    knowingly collect personal information from children.
+    Financify is a general-audience budgeting tool and is not directed at children. We do
+    not knowingly collect personal information from children under 13 — or the applicable
+    minimum age in your country — because we do not collect personal information from
+    anyone.
   </p>
 
-  <h2>9. Your rights (GDPR, UK GDPR, CCPA/CPRA)</h2>
+  <h2>11. Your rights under the GDPR and UK GDPR</h2>
   <p>
-    Because we do not receive or store any personal data about you, we hold nothing to
-    disclose, correct, export or erase. You keep full control of the data on your device (see
-    section 10). You may still contact us with any request and we will respond within one
-    month. You also have the right to lodge a complaint with your national data protection
-    authority.
+    You have rights of access, rectification, erasure, restriction, portability and
+    objection. Because we do not collect or process any personal data about you, we hold
+    nothing to disclose, correct, export, restrict or erase, and there is no processing to
+    object to. You can still write to us and we will respond within one month, ordinarily
+    to confirm that we hold no data about you. You have the right to complain to your
+    national supervisory authority.
+  </p>
+  <p>You remain in full control of the data held on your own device — see section 13.</p>
+
+  <h2>12. Your rights under California law (CCPA / CPRA)</h2>
+  <p>
+    We do not collect “personal information” as defined by the CCPA as amended by the CPRA.
+    In the preceding twelve months we have not collected, sold, shared or disclosed for a
+    business purpose any category of personal information, and we do not use or disclose
+    sensitive personal information. <strong>We have never sold or shared personal
+    information and never will.</strong>
   </p>
 
-  <h2>10. Retention, and how to delete everything</h2>
+  <h2>13. Retention, and how to delete everything</h2>
   <p>
-    Your data stays on your device until you remove it. You can erase it at any time by
-    deleting individual transactions or goals in the app, by clearing the app’s storage in
-    Android Settings → Apps → Financify → Storage, or by uninstalling the app.
+    We retain nothing, because we receive nothing. Data on your device stays there until
+    you remove it. You can delete it at any time by:
+  </p>
+  <ul>
+    <li>deleting individual transactions or goals inside the app; or</li>
+    <li>clearing the app’s storage in Android Settings → Apps → Financify → Storage; or</li>
+    <li>uninstalling the app, which removes its private storage entirely.</li>
+  </ul>
+
+  <h2>14. Security</h2>
+  <p>
+    App data is written to Financify’s private application directory, which the Android
+    sandbox isolates from other apps. You can add a further layer by enabling App lock, so
+    the app requires your fingerprint or screen lock each time it opens. Because your
+    financial records are not transmitted, there is no data in transit to intercept and no
+    server of ours to breach.
   </p>
 
-  <h2>11. Security</h2>
+  <h2>15. Changes to this policy</h2>
   <p>
-    Your records are stored in the app’s private directory, isolated by the Android sandbox,
-    and can be protected with the optional biometric lock. Receipt text sent for analysis is
-    transmitted over HTTPS.
+    If the app’s behaviour changes in a way that affects your privacy — for example if
+    cloud sync is ever added — we will update this page and the date above before releasing
+    that version, and summarise the change at the top.
   </p>
 
-  <h2>12. Changes to this policy</h2>
-  <p>
-    If the app’s behaviour changes in a way that affects your privacy, we will update this page
-    and the “last updated” date above before releasing that version.
-  </p>
-
-  <h2>13. Contact</h2>
+  <h2>16. Contact</h2>
   <p>
     D7 Labs — <a href="mailto:d7labs77@gmail.com">d7labs77@gmail.com</a><br>
     We aim to answer privacy enquiries within 30 days.
   </p>
 
   <footer class="site">
-    <p>© 2026 D7 Labs · <a href="../../">d7labs</a></p>
+    <p>© 2026 D7 Labs · <a href="../../">d7labs</a> · <a href="../terms/">Terms of Service</a></p>
   </footer>
 
 </main>
